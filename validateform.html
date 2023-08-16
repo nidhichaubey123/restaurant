@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myform" onsubmit="validateform(event)">
+        name:<input type="text" id="name">
+        email<input type="email" id="email">
+        <button type="submit">submit</button>
+        </form>
+        <script>
+            function validateform(event)
+            {
+                event.preventDefault(); // prevent automatic submition
+                const nameInput=document.getElementById("name")
+                const emailInput=document.getElementById("email")
+                if(nameInput.value.trim()==="")
+                {
+                    alert("please enter your name")
+                    return false
+                }
+
+                if(!isValidEmail(emailInput.value))
+                {
+                    alert("please enter valid email address")
+                }
+                alert("form submitted successfully")
+                document.getElementById("myform").submit()
+
+            }
+
+            function isValidEmail(email)
+            {
+                const atIndex=email.indexOf("@")
+                const dotIndex=email.lastIndexOf(".")
+                return atIndex>0 && dotIndex>atIndex+1
+            }
+
+
+
+        </script>
+
+        
+    </form>
+</body>
+</html>
