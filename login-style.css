@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing:border-box; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+ background-image: url("sky.jfif");
+ background-position: center;
+ background-size: cover;
+
+}
+.input-box{
+    margin: 20px;
+
+}
+.wrapper{
+    height: 300px;
+    width: 400px;
+ background-color: brown;
+ 
+    opacity: 0.9;
+    color: white;
+    margin: 150x;
+}
+.wrapper h1{
+    font-size: 30px;
+    text-align: center;
+
+}
+.register-link
+{
+    text-align: center;
+}
+.btn
+{
+
+    background-color: white;
+    width: 300px;
+    height:30px;
+    margin:25px;
+}
+.remember-forget label{
+    margin: 20px;
+    
+}

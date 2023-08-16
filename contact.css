@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.main{
+  margin: 40px;
+    background-color: white;
+    display:flex;
+    background-color: rgb(164, 159, 159);
+}
+.one{
+    height: 100%;
+    flex-basis:40%;
+    padding:40px 60px;
+}
+.two{
+
+    height: 100%;
+    flex-basis:60%;
+    padding:40px;
+    background-color:rgb(8, 100, 239)
+}
+textarea{
+    height:100px;
+    width: 300px;
+}
+input[type="text"]
+{   
+    width:200px;
+    height: 30px;
+}
+input[type="email"]
+{
+    width:200px;
+    height: 30px;
+}
+.submit{
+    height: 40px;
+    width: 50%;
+    background-color:rgb(239, 8, 177);
+    border-radius:10px;
+    color: white;
+}
